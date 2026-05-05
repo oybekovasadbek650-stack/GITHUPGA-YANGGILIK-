@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    /* list-style: none; */
+}
+
+.nav {
+    border: 1px solid #242424;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    
+}
+#class{
+    padding: 5px 0;
+
+}
+.nav_box {
+    padding: 11px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 200px;
+}
+
+.nav__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 80px;
+    list-style: none;
+}
+
+.nav__link {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #242424;
+    transition: 0.3s;
+    position: relative;
+
+}
+
+
+.nav__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #242424;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s;
+}
+
+.nav__link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+
+}
+
+.header {
+    background: url(./images/bg.png) center center / cover;
+    width: 100%;
+    height: 800px;
+    
+}
+
+.header_box {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-top: 500px;
+}
+
+.header_title {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 100%;
+    color: #242424;
+}
+
+.header_btn {
+    border: 2px solid #242424;
+    width: 263px;
+    height: 60px;
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.section_box {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.section_title {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 100%;
+    color: #242424;
+}
+
+.line {
+    height: 2px;
+    width: 140px;
+    color: #242424;
+    background-color: #242424;
+}
+
+.section_text {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #242424;
+    max-width: 450px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.section_box img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.section {
+    margin-bottom: 80px;
+}
+
+.section_btn {
+    border: 2px solid #242424;
+    width: 263px;
+    height: 60px;
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #242424;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 40px;
+}
+
+.section__img {
+    max-width: 545px;
+    height: 375px;
+}
+
+.sectionn_text {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: #242424;
+    max-width: 545px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer {
+    padding: 40px 0;
+    margin: 0 auto;
+}
+
+.footer__wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer__newsletter {
+    width: 268.54925537109375px;
+    height: 92px;
+    top: 40px;
+    left: 165px;
+
+}
+
+.footer__title {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 90%;
+    margin-bottom: 25px;
+}
+
+.footer__text {
+    font-family: 'Share Tech Mono';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+
+}
+
+.footer__item {
+    margin-bottom: 14px;
+}
+
+.footer__icons {
+    width: 168px;
+    height: 22px;
+    top: 40px;
+    left: 1107px;
+    display: flex;
+    justify-content: space-between;
+
+}
+@media (max-width:992px) {
+    .nav_box {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .nav__items {
+        column-gap: 30px;
+    }
+}
+
+@media (max-width:576px) {
+    .nav__items {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+@media (max-width:992px) {
+    .header_title {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    .header_box {
+        padding-top: 300px;
+    }
+}
+
+@media (max-width:576px) {
+    .header_title {
+        font-size: 36px;
+    }
+
+    .header_btn {
+        width: 180px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .header_box {
+        padding-top: 200px;
+    }
+}   
+@media (max-width:992px) {
+    .section_box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .section_text,
+    .sectionn_text {
+        max-width: 100%;
+    }
+}
+@media (max-width:992px) {
+    .section_box {
+        flex-direction: column;
+    }
+
+    .section__img {
+        order: -1;
+    }
+}
+@media (max-width:992px) {
+    .footer__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:576px) {
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
