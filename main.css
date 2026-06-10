@@ -543,3 +543,52 @@ body.dark-mode hr {
 body.dark-mode #theme-toggle {
   border-color: #e0e0e0;
 }
+
+
+/* ── THEME TOGGLE BUTTON ── */
+#theme-toggle {
+  background: transparent;
+  border: 1px solid #242424;
+  font-family: 'Share Tech Mono';
+  font-size: 14px;
+  padding: 6px 14px;
+  height: 36px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+#theme-toggle:hover {
+  background: #242424;
+  color: #fff;
+}
+
+/* Mobil uchun */
+@media (max-width: 576px) {
+  #theme-toggle {
+    width: 100%;
+    max-width: 160px;
+    height: 38px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  #theme-toggle {
+    font-size: 12px;
+    max-width: 140px;
+  }
+}
+
+/* Dark mode toggle */
+body.dark-mode #theme-toggle {
+  border-color: #e0e0e0;
+  color: #e0e0e0;
+}
+
+body.dark-mode #theme-toggle:hover {
+  background: #e0e0e0;
+  color: #111;
+}
